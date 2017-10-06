@@ -21,9 +21,9 @@
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
             <intent-filter>
-                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="*/*" />
+                <data android:mimeType="application/pdf" />
             </intent-filter>
         </config-file>
         <source-file src="src/android/SharingReceptor.java" target-dir="src/org/apache/cordova/sharingreceptor" />

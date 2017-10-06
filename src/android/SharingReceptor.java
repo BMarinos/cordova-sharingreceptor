@@ -35,7 +35,8 @@ public class SharingReceptor extends CordovaPlugin {
     // Constant that holds all the intent actions that we will handle.
     private static final Set<String> SEND_INTENTS = new HashSet<String>(Arrays.asList(
             Intent.ACTION_SEND,
-            Intent.ACTION_SEND_MULTIPLE
+            Intent.ACTION_SEND_MULTIPLE,
+            Intent.ACTION_VIEW
     ));
 
     private static boolean isSendIntent(Intent intent) {
